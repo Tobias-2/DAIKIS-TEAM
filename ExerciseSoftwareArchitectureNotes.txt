@@ -1,0 +1,3 @@
+1. Your job as a developer is to incorporate all aspects of the R list into your business
+2. Decide extra Things outside of R list to incorporate (expensive decisions, which make incorporation of those Things possible) (the results/objects created from that expensive decision should be changeable/mutable in the future)
+3. Cannot be too specific (Example: Changing authentication of databases is too specific.)
