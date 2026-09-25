@@ -1,5 +1,5 @@
-1. People
-2. Software
-3. Receptionists
-4. Servers
-5. New Daiki
+R2. An administrative staff member defines course offerings, assigns rooms, and publishes a term schedule.
+R4. The system validates an enrollment request against prerequisites, seat capacity, and schedule conflicts.
+R5. An administrative staff member approves, rejects, or places an enrollment request on a waitlist.
+R6. A faculty member submits and revises grades for students in their section.
+R9. Every data-modifying action is captured in an immutable audit trail.
