@@ -1,0 +1,58 @@
+Five Key Expensive Decisions and Their Requirements
+
+Role-Based Authorization
+
+Main requirement: R1
+CampusFlow uses roles and permissions to decide what each user is allowed to do.
+Students, faculty members, and administrative staff have different responsibilities and therefore need different levels of access.
+Roles and permissions can be adjusted or expanded if the university’s needs change.
+This decision affects almost every part of CampusFlow.
+Connection to R1: After signing in through the central Identity Provider, each user receives a session with the appropriate role.
+
+Academic Program Structure
+
+Main requirement: R4
+Every student is connected to an academic program.
+Each program has a curriculum and a set of degree requirements.
+This information helps CampusFlow check prerequisites and track a student’s academic progress.
+Programs, curricula, and degree requirements can be updated when university rules change.
+Connection to R4: CampusFlow needs information about programs, curricula, and prerequisites to determine whether an enrollment request is valid.
+
+Separation of Courses and Course Sections
+
+Main requirement: R2
+A course describes the general subject, while a course section represents a specific offering of that course during a particular term.
+Each section can have its own faculty member, room, schedule, and student capacity.
+Course sections can be changed or created for each term without changing the general course information.
+Connection to R2: Administrative staff create course offerings, assign rooms, and publish the schedule for the term.
+
+Enrollment and Waitlist Management
+
+Main requirement: R5
+Students submit enrollment requests for specific course sections.
+An enrollment request can be approved, rejected, or placed on a waitlist.
+The status of a request and the student’s position on the waitlist can change over time.
+This allows CampusFlow to keep track of the entire enrollment process, rather than storing only the final result.
+Connection to R5: Administrative staff decide whether an enrollment request should be approved, rejected, or placed on a waitlist.
+
+Academic Record and Transcript Model
+
+Main requirement: R7
+Every student has a permanent academic record containing grades and other relevant academic information.
+CampusFlow uses this record to calculate the student’s cumulative GPA and create transcripts.
+Grades can be corrected or revised according to university rules without deleting the student’s academic history.
+Official and unofficial transcripts can be generated from the same academic record.
+Connection to R7: CampusFlow calculates the cumulative GPA and generates an official transcript when requested.
+Why Are These Decisions “Expensive”?
+These decisions affect several parts of CampusFlow and are connected to multiple workflows.
+They introduce important classes and relationships into the UML model.
+Changing these decisions later could require major changes to the system’s design.
+However, the objects created by these decisions remain flexible. For example, roles, curricula, course sections, enrollment statuses, waitlist positions, grades, and transcripts can still be modified in the future.
+
+Requirement Overview
+
+Role-Based Authorization → R1
+Academic Program Structure → R4
+Courses and Course Sections → R2
+Enrollment and Waitlist Management → R5
+Academic Record and Transcript Model → R7
