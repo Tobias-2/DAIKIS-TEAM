@@ -1,0 +1,6 @@
+@CampusFlow.WebAPI_HostAddress = http://localhost:5118
+
+GET {{CampusFlow.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
